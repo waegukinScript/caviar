@@ -1,0 +1,296 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+    // Title
+    title Caviar - Premium Restaurant Template
+    // Favicon
+    link(rel='icon', href='img/core-img/favicon.ico')
+    // Core Stylesheet
+    link(href='style.css', rel='stylesheet')
+    // Responsive CSS
+    link(href='css/responsive/responsive.css', rel='stylesheet')
+  body
+    // Preloader
+    #preloader
+      .caviar-load
+      .preload-icons
+        img.preload-1(src='img/core-img/preload-1.png', alt='')
+        img.preload-2(src='img/core-img/preload-2.png', alt='')
+        img.preload-3(src='img/core-img/preload-3.png', alt='')
+    // ***** Search Form Area *****
+    .caviar-search-form.d-flex.align-items-center
+      .container
+        .row
+          .col-12
+            #closeBtn.search-close-btn
+              i.pe-7s-close-circle(aria-hidden='true')
+            form(action='#', method='get')
+              input#search(type='search', name='caviarSearch', placeholder='Search Your Favourite Dish ...')
+              input.d-none(type='submit', value='submit')
+    // ***** Header Area Start *****
+    header#header.header_area
+      .container.h-100
+        .row.h-100
+          .col-12.h-100
+            nav.h-100.navbar.navbar-expand-lg.align-items-center
+              a.navbar-brand(href='/') caviar
+              button.navbar-toggler(type='button', data-toggle='collapse', data-target='#caviarNav', aria-controls='caviarNav', aria-expanded='false', aria-label='Toggle navigation')
+                span.fa.fa-bars
+              #caviarNav.collapse.navbar-collapse
+                ul#caviarMenu.navbar-nav.ml-auto
+                  li.nav-item.active
+                    a.nav-link(href='/')
+                      | Home 
+                      span.sr-only (current)
+                  li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Pages
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                      a.dropdown-item(href='/') Home
+                      a.dropdown-item(href='/menu') Menu
+                      a.dropdown-item(href='/regular-page') Regular Page
+                      a.dropdown-item(href='/contact') Contact
+                  li.nav-item
+                    a.nav-link(href='#about') About Us
+                  li.nav-item
+                    a.nav-link(href='#menu') Menu
+                  li.nav-item
+                    a.nav-link(href='#awards') Awards
+                  li.nav-item
+                    a.nav-link(href='#testimonial') Testimonials
+                  li.nav-item
+                    a.nav-link(href='#reservation') Reservation
+                  li.nav-item
+                    a.nav-link(href='/contact') Contact
+                // Search Btn
+                .caviar-search-btn
+                  a#search-btn(href='#')
+                    i.fa.fa-search(aria-hidden='true')
+    // ***** Header Area End *****
+    // ***** Breadcumb Area Start *****
+    .breadcumb-area.bg-img.bg-overlay(style='background-image: url(img/bg-img/hero-2.jpg)')
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12
+            .breadcumb-content
+              h2 Menu
+              a#menubtn.btn.caviar-btn(href='#menu')
+                span
+                |  Special
+    // ***** Breadcumb Area End *****
+    // ***** Menu Area Start *****
+    .caviar-food-menu.section-padding-150.clearfix
+      .container
+        .row
+          .col-2
+            .food-menu-title
+              h2 Menu
+          .col-10
+            .caviar-projects-menu
+              .text-center.portfolio-menu
+                button.active(data-filter='*') All
+                button(data-filter='.breakfast') breakfast
+                button(data-filter='.lunch') lunch
+                button(data-filter='.dinner') dinner
+            .caviar-menu-slides.owl-carousel.clearfix
+              .caviar-portfolio.clearfix
+                // Single Gallery Item
+                .single_menu_item.breakfast.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.breakfast.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-3.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+              .caviar-portfolio.clearfix
+                // Single Gallery Item
+                .single_menu_item.breakfast.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.breakfast.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-3.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+              .caviar-portfolio.clearfix
+                // Single Gallery Item
+                .single_menu_item.breakfast.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.breakfast.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-3.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.lunch.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-1.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+                // Single Gallery Item
+                .single_menu_item.dinner.wow.fadeInUp
+                  .d-sm-flex.align-items-center
+                    .dish-thumb
+                      img(src='img/menu-img/dish-2.png', alt='')
+                    .dish-description
+                      h3 Lorem Ipsum Dolor Sit Amet
+                      p
+                        | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor.
+                    .dish-value
+                      h3 $45
+    // ***** Menu Area End *****
+    // ***** Special Menu Area Start *****
+    section#menu.caviar-dish-menu.clearfix
+      .container
+        .row
+          .col-12.menu-heading
+            .section-heading.text-center
+              h2 Special
+        .row
+          .col-12.col-sm-6.col-md-4
+            .caviar-single-dish.wow.fadeInUp(data-wow-delay='0.5s')
+              img(src='img/menu-img/dish-1.png', alt='')
+              .dish-info
+                h6.dish-name Lorem Ipsum Dolor Sit Amet
+                p.dish-price $45
+          .col-12.col-sm-6.col-md-4
+            .caviar-single-dish.wow.fadeInUp(data-wow-delay='1s')
+              img(src='img/menu-img/dish-2.png', alt='')
+              .dish-info
+                h6.dish-name Lorem Ipsum
+                p.dish-price $45
+          .col-12.col-sm-6.col-md-4
+            .caviar-single-dish.wow.fadeInUp(data-wow-delay='1.5s')
+              img(src='img/menu-img/dish-3.png', alt='')
+              .dish-info
+                h6.dish-name Lorem Ipsum Dolor Sit Amet
+                p.dish-price $45
+    // ***** Special Menu Area End *****
+    

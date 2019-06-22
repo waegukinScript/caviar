@@ -1,0 +1,129 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+    // Title
+    title Caviar - Premium Restaurant Template
+    // Favicon
+    link(rel='icon', href='img/core-img/favicon.ico')
+    // Core Stylesheet
+    link(href='style.css', rel='stylesheet')
+    // Responsive CSS
+    link(href='css/responsive/responsive.css', rel='stylesheet')
+  body
+    // Preloader
+    #preloader
+      .caviar-load
+      .preload-icons
+        img.preload-1(src='img/core-img/preload-1.png', alt='')
+        img.preload-2(src='img/core-img/preload-2.png', alt='')
+        img.preload-3(src='img/core-img/preload-3.png', alt='')
+    // ***** Search Form Area *****
+    .caviar-search-form.d-flex.align-items-center
+      .container
+        .row
+          .col-12
+            #closeBtn.search-close-btn
+              i.pe-7s-close-circle(aria-hidden='true')
+            form(action='#', method='get')
+              input#search(type='search', name='caviarSearch', placeholder='Search Your Favourite Dish ...')
+              input.d-none(type='submit', value='submit')
+    // ***** Header Area Start *****
+    header#header.header_area
+      .container.h-100
+        .row.h-100
+          .col-12.h-100
+            nav.h-100.navbar.navbar-expand-lg.align-items-center
+              a.navbar-brand(href='/') caviar
+              button.navbar-toggler(type='button', data-toggle='collapse', data-target='#caviarNav', aria-controls='caviarNav', aria-expanded='false', aria-label='Toggle navigation')
+                span.fa.fa-bars
+              #caviarNav.collapse.navbar-collapse
+                ul#caviarMenu.navbar-nav.ml-auto
+                  li.nav-item.active
+                    a.nav-link(href='/')
+                      | Home 
+                      span.sr-only (current)
+                  li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Pages
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                      a.dropdown-item(href='/') Home
+                      a.dropdown-item(href='/menu') Menu
+                      a.dropdown-item(href='/regular-page') Regular Page
+                      a.dropdown-item(href='/contact') Contact
+                  li.nav-item
+                    a.nav-link(href='#about') About Us
+                  li.nav-item
+                    a.nav-link(href='#menu') Menu
+                  li.nav-item
+                    a.nav-link(href='#awards') Awards
+                  li.nav-item
+                    a.nav-link(href='#testimonial') Testimonials
+                  li.nav-item
+                    a.nav-link(href='#reservation') Reservation
+                  li.nav-item
+                    a.nav-link(href='/contact') Contact
+                // Search Btn
+                .caviar-search-btn
+                  a#search-btn(href='#')
+                    i.fa.fa-search(aria-hidden='true')
+    // ***** Header Area End *****
+    // ***** Breadcumb Area Start *****
+    .breadcumb-area.bg-img.bg-overlay(style='background-image: url(img/bg-img/hero-5.jpg)')
+      .container.h-100
+        .row.h-100.align-items-center
+          .col-12
+            .breadcumb-content
+    // ***** Breadcumb Area End *****
+    // ***** Regular Page Area Start *****
+    section.caviar-regular-page.section-padding-100
+      .container
+        .row.justify-content-center
+          .col-12.col-md-8
+            .regular-page-content
+              .post-title
+                h2 Proin et sem cursus, placerat odio quis, consectetur turpis
+                a(href='#') Maecenas sit amet quam magna
+              .post-content
+                p
+                  | Sed commodo augue eu diam tincidunt, sit amet auctor lectus semper. Mauris porttitor diam at fringilla tempor. Integer molestie rhoncus nisi a euismod. Etiam scelerisque eu enim et vestibulum. Mauris finibus, eros a faucibus varius, dui risus mattis massa, sed lobortis ante ante eget justo. Nam eu dolor lorem. Praesent blandit leo sit amet velit accumsan ultrices. Vestibulum nec libero vel sapien dictum euismod eu ac justo.
+                blockquote
+                  img(src='img/icons/quotation-mark.svg', alt='')
+                  .blockquote-content
+                    h6
+                      | Quisque sagittis non ex eget vestibulum. Sed nec ultrices dui. Cras et sagittis erat. Maecenas pulvinar, turpis in dictum tincidunt, dolor nibh lacinia lacus, quis.
+                    p Liam Neeson
+                p
+                  | Nulla mattis massa eu turpis aliquet accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet nunc sed felis vestibulum pulvinar. Nunc odio est, blandit ut faucibus non, congue nec augue. Duis vitae vulputate nunc. Sed mi lectus, ultricies ut volutpat luctus, vestibulum ut nunc. Vestibulum sed lorem malesuada, dapibus ante pharetra, pretium mauris. Sed eleifend sit amet felis id fringilla. Suspendisse nec erat vel lacus commodo imperdiet non quis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac interdum elit, ac pellentesque felis. Curabitur aliquet at sapien dapibus laoreet. Sed in justo eu sem pellentesque lobortis. In hac habitasse platea dictumst. Nam pellentesque eros ut auctor fermentum. Vestibulum ut risus pharetra.
+    // ***** Regular Page Area End *****
+    // ***** Footer Area Start *****
+    footer.caviar-footer-area
+      .container
+        .row
+          .col-12
+            .footer-text
+              a.navbar-brand(href='/') caviar
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              p
+                | Copyright ©
+                script.
+                  document.write(new Date().getFullYear());
+                |  All rights reserved | This template is made with 
+                i.fa.fa-heart-o(aria-hidden='true')
+                |  by 
+                a(href='https://colorlib.com', target='_blank') Colorlib
+              // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+              // ***** Footer Area End *****
+              // jQuery-2.2.4 js
+              script(src='js/jquery/jquery-2.2.4.min.js')
+              // Popper js
+              script(src='js/bootstrap/popper.min.js')
+              // Bootstrap js
+              script(src='js/bootstrap/bootstrap.min.js')
+              // All Plugins js
+              script(src='js/others/plugins.js')
+              // Active js
+              script(src='js/active.js')
