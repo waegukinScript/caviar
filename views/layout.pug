@@ -1,29 +1,31 @@
 doctype html
-html
+html(lang='en')
   head
-    meta(charset='utf-8')
+    meta(charset='UTF-8')
+    meta(name='description', content='')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='theme-color' content='#4DA5F4')
-    meta(name='csrf-token', content=_csrf)
-    title #{title} - Hackathon Starter
-    link(rel='shortcut icon', href='/favicon.png')
-    link(rel='stylesheet', href='/css/main.css')
-    script(src='/js/lib/Chart.min.js')
-
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+    // Title
+    title #{title} - Premium Restaurant Template
+    // Favicon
+    link(rel='icon', href='img/core-img/favicon.ico')
+    // Core Stylesheet
+    link(href='style.css', rel='stylesheet')
+    // Responsive CSS
+    link(href='css/responsive/responsive.css', rel='stylesheet')
   body
     include partials/header
 
-    .container
-      include partials/flash
-      block content
+    include partials/flash
+    block content
 
     include partials/footer
 
-    script(src='/js/lib/jquery.min.js')
-    script(src='/js/lib/popper.min.js')
-    script(src='/js/lib/bootstrap.min.js')
-    script(src='/js/main.js')
+    //- script(src='/js/lib/jquery.min.js')
+    //- script(src='/js/lib/popper.min.js')
+    //- script(src='/js/lib/bootstrap.min.js')
+    //- script(src='/js/main.js')
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID
     script.

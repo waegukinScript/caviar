@@ -8,9 +8,9 @@ exports.postEvent = (req, res, next) => {
   console.log(obj);
   const event = new Event({
     bookName: obj.bookName,
-    emailAddress: obj.emailAddress,
-    phoneNumber: obj.phoneNumber,
+    postMessage: obj.postMessage,
     eventDate: obj.eventDate,
+    eventTime : obj.eventTime,
     selectPeople: obj.selectPeople,
   });
   event.save((err) => {

@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
   bookName: String,
-  emailAddress: String,
-  phoneNumber: String,
+  postMessage: String,
+  eventTime: String,
   eventDate: Date,
   selectPeople: String,
   createdAt: String
